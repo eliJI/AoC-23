@@ -4,7 +4,9 @@ import (
 	"bufio"
 	"fmt"
 	"os"
-	"strconv"
+	//"strconv"
+
+	//"strconv"
 	"strings"
 	"unicode"
 )
@@ -51,10 +53,7 @@ func getNums(bytes []byte) []byte {
 }
 
 func replaceWordNums(line []byte) []byte {
-	for k, v := range numberMap {
-		line = []byte(strings.ReplaceAll(string(line), k, strconv.Itoa(v)))
-	}
-	return line
+
 }
 
 func addone(intptr *int) {
